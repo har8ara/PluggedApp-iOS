@@ -13,6 +13,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let request = RequestManager()
+        request.sendPhoneNumber("+37494543234", requestId: 1)
     }
 
     override func didReceiveMemoryWarning() {
